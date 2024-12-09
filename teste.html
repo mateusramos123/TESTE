@@ -2,44 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TESTE</title>
 <style>
- .maincontainer {
-  position: relative;
-  width: 250px;
-  height: 320px;
-  
- }
+  body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .maincontainer {
+    position: relative;
+    width: 400px;  /* Aumentando a largura */
+    height: 600px; /* Aumentando a altura */
+  }
  
- .thecard{
+  .thecard {
     position: absolute;
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
     transition: all 0.5s ease;
-   
- }
+  }
 
- .thecard:hover {
+  .thecard:hover {
     transform: rotateY(180deg);
- }
+  }
 
- .thefront {
+  .thefront {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    background-color: #ffc728;
+    background-color: #1c1b55;
     color: #333;
     text-align: center;
     font-family: 'zilla slab', sans-serif;
     border-radius: 25px;
-    font-size: 18px;
+    font-size: 22px;  /* Aumentando o tamanho da fonte */
     font-weight: bold;
- }
+  }
 
- .theback {
+  .theback {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -49,10 +56,10 @@
     text-align: center;
     font-family: 'zilla slab', sans-serif;
     border-radius: 20px;
-    font-size: 18px;
+    font-size: 22px;  /* Aumentando o tamanho da fonte */
     font-weight: bold;
     transform: rotateY(180deg);
- }
+  }
  
 </style>
 
@@ -60,14 +67,21 @@
 <body>
 
 <div class="maincontainer">
+  <div class="thecard">
+    <div class="thefront"> 
+      </div>
+    <div class="theback"><h2>Como o sono afeta a Saúde</h2>
+      <p>
+          Estudos indicam que a falta de sono está ligada ao aumento da obesidade, devido ao aumento da
+          grelina (hormônio da fome) e à diminuição da leptina (hormônio da saciedade), o que eleva o apetite.
+          Além disso, a privação de sono está associada a problemas no metabolismo da glicose, resistência à
+          insulina e diabetes tipo 2. Esse ciclo se agrava com uma alimentação inadequada, que pode piorar a
+          qualidade do sono. Portanto, manter um padrão de sono adequado e uma dieta equilibrada, rica em
+          frutas, legumes e alimentos de baixa densidade calórica, é essencial para a saúde e para um sono
+          reparador.
 
-<div class="thecard">
-  
-    <div class="thefront">Front of card</div>
-    <div class="theback">Back of card</div>
-     
-</div>
-
+      </p></div>
+  </div>
 </div>
 
 </body>
